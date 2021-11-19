@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /documents
+Host: howtosay.ru
+Sitemap: http://howtosay.ru/sitemap.xml

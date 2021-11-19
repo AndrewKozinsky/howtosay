@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./code/src:/code/src
+      - ./nginx.conf.dev:/etc/nginx/conf.d/default.conf
+    networks:
+      - code-network
+  php:
+    image: php:fpm
+    volumes:
+      - ./code/src:/code/src
+    networks:
+      - code-network
+
+networks:
+  code-network:
+    driver: bridge

@@ -1,0 +1,464 @@
+/* Общие стили учебника */
+.page-title{
+    font-family: "PT Serif", serif;
+    font-size: 44px;
+    line-height: 1;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 0 30px 0;
+}
+.lesson-number{
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0 0 8px 0;
+}
+.plf-w{
+    padding: 0 0 10px 0;
+}
+.plf{
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: bold;
+    padding: 0 0 6px 0;
+}
+.gray-text{
+    color: rgb(200, 200, 200);
+}
+
+@media (min-width: 500px) {
+    .plf{
+        font-size: 26px;
+    }
+}
+/* Общие стили учебника */
+
+
+/* Контент */
+.t h2{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+}
+.t h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+}
+.t p{
+    padding-bottom: 5px;
+}
+.t p:last-child{
+    padding-bottom: 0;
+}
+.t ol, .t ul{
+    padding: 0 0 0 20px;
+}
+.t li{
+    padding: 0 0 5px 0;
+}
+/* / / Контент */
+
+
+/* Блок с изучением слов */
+.words-colored-g-w{
+    background-color: rgb(241, 244, 250);
+    border-radius: 4px;
+    padding: 15px 2% 5px 2%;
+}
+.words-g-w{
+    padding: 0 0 25px 0;
+}
+.word-g-w{
+    padding: 0 0 8px 0;
+}
+.word-word{
+    line-height: 1.3em;
+}
+.word-source{
+
+}
+.word-dash{
+
+}
+.word-traslated{
+    font-weight: bold;
+}
+.word-text-input{
+    display: none;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    margin: 3px 0 3px 0;
+}
+.word-text-input:focus{
+    box-shadow: inset 0 0 0;
+}
+.word-right-rus-word, .word-right-eng-word{
+    display: none;
+    color: rgb(58, 101, 183);
+    padding: 0 0 0 8px;
+}
+
+.words-dictionary-g-w .word-text-input{
+    border: 1px solid rgb(210, 210, 210);
+}
+.words-dictionary-g-w .word-text-input:focus{
+    border: 1px solid rgb(160, 160, 160);
+}
+.words-tip-enter{
+    display: none;
+    /*color: rgb(58, 101, 183);*/
+    font-style: italic;
+    padding: 5px 0 3px 0;
+}
+@media (min-width: 500px) {
+    .words-colored-g-w{
+        padding: 15px 2.8% 8px 2.8%;
+    }
+}
+@media (min-width: 900px) {
+    .words-colored-g-w{
+        padding: 15px 2.3% 5px 2.3%;
+    }
+}
+/* / / Блок с изучением слов */
+
+
+/* Блок с изучением слов. Переключатели. */
+.btns-group{
+    display: inline-block;
+}
+.btns-group a:first-child{
+    border-radius: 3px 0 0 3px;
+}
+.btns-group a:last-child{
+    border-radius: 0 3px 3px 0;
+}
+.btn-group{
+    border: 1px solid rgb(58, 101, 183);
+    border-radius: 0;
+    padding: 4px 8px 5px 8px;
+    margin-right: 0;
+}
+.btn-underscore{
+    position: relative;
+    padding-right: 35px;
+}
+.btn-underscore:after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    width: 21px;
+    height: 1px;
+    background-color: rgb(157, 178, 219);
+}
+.btn-group-selected, .btn-group-selected:hover, .btn-group-selected:focus{
+    color: rgb(58, 101, 183);
+    background-color: white;
+}
+.btn-link-mix{
+    padding-left: 26px;
+}
+.btn-link-mix:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    width: 14px;
+    height: 13px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"><path d="M11,10H10c-.84,0-1.8-1.68-2.86-3.5C8.2,4.68,9.16,3,10,3h1V5l3-2.61L11,0V2H10C8.67,2,7.5,3.58,6.45,5.34,5.38,3.58,4.23,2,3,2H0V3H3c.84,0,1.76,1.68,2.78,3.5C4.76,8.32,3.84,10,3,10H0v1H3c1.23,0,2.38-1.58,3.45-3.34C7.5,9.42,8.67,11,10,11h1v2l3-2.39L11,8Z" style="fill:#3863ba"/></svg>');
+}
+.btn-link-mix:hover:before{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"><path d="M11,10H10c-.84,0-1.8-1.68-2.86-3.5C8.2,4.68,9.16,3,10,3h1V5l3-2.61L11,0V2H10C8.67,2,7.5,3.58,6.45,5.34,5.38,3.58,4.23,2,3,2H0V3H3c.84,0,1.76,1.68,2.78,3.5C4.76,8.32,3.84,10,3,10H0v1H3c1.23,0,2.38-1.58,3.45-3.34C7.5,9.42,8.67,11,10,11h1v2l3-2.39L11,8Z" style="fill:rgb(39, 83, 166)"/></svg>');
+}
+
+.btn-link-show-hide-translate{
+    padding-left: 26px;
+}
+.btn-link-show-hide-translate:before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10"><defs><style>.a{fill:#3863ba;}</style></defs><rect class="a" width="14" height="1"/><rect class="a" y="3" width="11" height="1"/><rect class="a" y="6" width="11" height="1"/><rect class="a" y="9" width="11" height="1"/></svg>');
+}
+.btn-link-show-hide-translate:hover:before{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10"><defs><style>.a{fill:rgb(39, 83, 166);}</style></defs><rect class="a" width="14" height="1"/><rect class="a" y="3" width="11" height="1"/><rect class="a" y="6" width="11" height="1"/><rect class="a" y="9" width="11" height="1"/></svg>');
+}
+
+.btn-link-clear{
+    padding-left: 26px;
+}
+.btn-link-clear:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 16px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M8,12.74l.49.49L15.71,6,10,.29,2.79,7.52,3.31,8l-3,3,3,3H0v1H13V14H6.7Zm2-11L14.29,6,8.5,11.78,4.24,7.48Zm-6,7L7.27,12,5.78,13.5H4.2L1.7,11Z" style="fill:#3863ba"/></svg>');
+}
+.btn-link-clearx:hover:before{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"><path d="M8,12.74l.49.49L15.71,6,10,.29,2.79,7.52,3.31,8l-3,3,3,3H0v1H13V14H6.7Zm2-11L14.29,6,8.5,11.78,4.24,7.48Zm-6,7L7.27,12,5.78,13.5H4.2L1.7,11Z" style="fill:rgb(39, 83, 166)"/></svg>');
+}
+/* / / Блок с изучением слов. Переключатели. */
+
+
+/* Совет */
+.advice-w{
+    background-color: rgb(241, 244, 231);
+    border-radius: 4px;
+    padding: 13px 20px 8px 20px;
+}
+.advice-block-name{
+    font-size: 13px;
+    line-height: 15px;
+    color: rgb(173, 169, 97);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 0 5px 0;
+}
+/* / / Совет */
+
+
+/* Пример */
+.example-w{
+    padding: 0 0 0 20px;
+}
+.example-w p:last-child{
+    padding-bottom: 0;
+}
+/* / / Пример */
+
+
+/* Таблица времен глагола */
+.t-t-table{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+}
+.t-t-cell{
+    display: block;
+    border-right: 0px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.t-t-cell:last-child{
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+.t-t-cell-block{
+    padding: 7px 15px 7px 15px;
+}
+.t-t-cell-block-top{
+    border-bottom: none;
+    padding: 9px 15px 0px 15px;
+}
+.t-t-cell-block-bottom{
+    border-top: none;
+    padding: 0px 15px 9px 15px;
+}
+.t-t-rule-text{
+    padding: 0px 25px 0px 0;
+}
+
+.t-t-rable-rule td{
+    vertical-align: middle;
+    padding: 6px 0 6px 0;
+}
+
+@media (min-width: 700px) {
+    .t-t-table{
+        display: table;
+    }
+    .t-t-cell{
+        display: table-cell;
+        border-right-width: 1px;
+        border-bottom-width: 0px;
+    }
+    .t-t-cell-block-top{
+        border-bottom: 1px solid rgb(230, 230, 230);
+        padding: 7px 15px 7px 15px;
+    }
+    .t-t-cell-block-bottom{
+        border-top: 1px solid rgb(230, 230, 230);
+        padding: 7px 15px 7px 15px;
+    }
+}
+/* / / Таблица времен глагола */
+
+
+/* Задания */
+.task-wrapper{
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+    padding: 10px 15px 8px 18px;
+}
+.task-table{
+    width: 100%;
+}
+.task-table td{
+    vertical-align: top;
+}
+.task-header{
+    font-weight: bold;
+    padding: 0 0 3px 0;
+}
+.task-wrapper p{
+    font-size: 14px;
+    padding: 0 0 5px 0;
+}
+.task-wrapper ol{
+    list-style:none;
+    counter-reset: li;
+    padding: 0 0 0px 20px;
+}
+.task-wrapper ol li{
+    position: relative;
+    padding: 0px 0 5px 5px;
+}
+.task-wrapper ol li:before {
+    position: absolute;
+    top: 1px;
+    left: -18px;
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+    text-align: right;
+
+    content: counter(li);
+    counter-increment: li;
+    content: counter(li) ".";
+}
+
+
+
+
+.task-table-td-right{
+    width: 70px;
+    text-align: right;
+}
+
+.task-ready-w{
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(247, 247, 247);
+}
+.task-ready-w{
+    color: rgb(165, 165, 165);
+}
+.task-ready-w .btn-ready{
+    display: none;
+}
+.task-ready-w .task-ready-btn-w{
+    height: 28px;
+    background-position: 50% 50%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" style="fill:#ddd"/><path d="M6.34,15.4c.44.5,5.91,6.39,6,6.53A57.9,57.9,0,0,1,21.62,8.87l-.49-1.26a28.92,28.92,0,0,0-9.54,9.54,36.57,36.57,0,0,1-3.76-3.27C7.43,14.32,6.34,15.4,6.34,15.4Z" style="fill:#fff"/></svg>');
+    background-repeat: no-repeat;
+}
+
+.task1-wrapper{
+}
+.task1-p-w{
+    border-radius: 3px;
+    padding: 3px 0 3px 6px;
+}
+.task1-p-w:hover{
+    background-color: rgb(246, 246, 246);
+}
+.task1-p{
+    padding: 0 0 2px 0;
+}
+.task1-p-number{
+    display: inline-block;
+    font-size: .8em;
+    color: rgb(200, 200, 200);
+    width: 20px;
+}
+.task1-p-answer-w{
+    display: none;
+    font-size: 14px;
+    padding: 0 0 0 24px;
+}
+.task1-p-answer-w p{
+    line-height: 20px;
+    padding: 1px 0 3px 0;
+}
+/* / / Задания */
+
+
+/* Вторая техника речи */
+.se2-g-w{
+
+}
+.se2-item-w{
+    padding: 0 0 10px 0;
+}
+.se2-item-number{
+    width: 25px;
+    font-size: 0.8em;
+    color: rgb(200, 200, 200);
+    text-align: right;
+    float: left;
+    padding: 0 5px 0 0;
+}
+.se2-item-text-w{
+    padding: 0 0 0 25px;
+}
+.se2-item-text{
+    padding: 0 0 1px 0;
+}
+.se2-text-input{
+    width: 100%;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    margin: 0px 0 3px 0;
+}
+.se2-text-input:focus{
+    border: 1px solid rgb(160, 160, 160);
+}
+.se2-eng-text{
+    color: rgb(58, 101, 183);
+    padding: 0 0 0 8px;
+}
+.se2-eng-text{
+    display: none;
+}
+
+/* / / Вторая техника речи */
+
+/* Нумерация страниц */
+.pagination-w{
+    font-size: 15px;
+    line-height: 1em;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pagination-prev, .pagination-next{
+    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.pagination-prev{
+    margin: 0 7px 0 0;
+}
+.pagination-next{
+    margin: 0 0 0 7px;
+}
+@media (min-width: 500px) {
+    .pagination-prev{
+        margin: 0 35px 0 0;
+    }
+    .pagination-next{
+        margin: 0 0 0 35px;
+    }
+}
+/* / / Нумерация страниц */
